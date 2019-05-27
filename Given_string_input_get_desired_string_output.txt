@@ -1,0 +1,23 @@
+# WAP if input=a3b4 output= adbf etc        
+str= 'a3b4'
+output=''
+for i in str:
+    if i.isalpha():
+        output=output+i
+        previous=i
+    else:
+        newch= chr(ord(previous)+int(i))
+        output=output+newch
+print(output)
+
+# WAP input a3b4c5, req output= aaabbbbccccc
+
+string = 'a3b4c5' 
+output = ''
+for i in string:
+    if i.isalpha():
+        output=output+i
+        previous=i
+    else:
+        output=output+previous*(int(i)-1)
+print(output)

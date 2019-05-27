@@ -1,0 +1,29 @@
+# WAP to reverse words within a string
+
+string = input("Enter a sentence to reverse words:")
+list = string.split()
+i= len(list) - 1
+list1 = []
+while i>=0:
+    list1.append(list[i])
+    i= i-1
+print(list1,end ='')
+reverse_wordstr = ''.join(list1)
+print(reverse_wordstr)
+
+# Reversing characters within a words, without reversing words
+
+Str= input( "Enter somestring:")
+l= Str.split()
+#print(l)
+i= len(l)-1
+l1= []
+while i>=0:
+    l1.append(l[i])
+    i=i-1
+#print(l1, end='')
+output= ' '.join(l1)
+print(output)
+print(type(output))
+print(''.join(reversed(output)))
+

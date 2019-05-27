@@ -1,0 +1,21 @@
+# to print string in fwd and reverse direction
+string= input("Enter some word:")
+n= len(string)
+i=0
+# to print string in fwd direction
+while i<n:
+    print(string[i], end='')
+    i=i+1
+print()
+#to print string in reverse direction using positive index
+i=n-1
+while i>=0:
+    print(string[i], end='')
+    i=i-1
+print()
+#to print string in reverse direction using negative index
+i=-1
+while i>=-n:
+    print(string[i], end='')
+    i=i-1
+print()

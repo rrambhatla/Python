@@ -1,0 +1,13 @@
+#  WAP to find sum of digits
+
+
+#using while loop
+num = eval(input("enter some number to find sum of digits:")
+sum = 0
+while num>0:
+    d = num % 10
+    num = num//10
+    sum = sum + d
+print(sum)
+
+

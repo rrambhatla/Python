@@ -1,0 +1,46 @@
+# WAP to give reverse of a string
+ 
+# using For loop to reverse string
+word = 'simplify'
+i= len(word)-1
+for x in word:
+    print(word[i],end='')
+    i=i-1
+
+#Using while loop to reverse string  
+word= ('simplify')
+i= len(word) -1
+while i>=0:
+    print(word[i], end='')
+    i= i-1
+    
+#using def function
+def test(word): 
+  str = "" 
+  for i in word: 
+    str = i + str
+  return str
+  
+word = input("Enter some string:" )
+  
+print ("The original string  is : ",end="") 
+print (word) 
+  
+print ("The reversed string is : ",end="") 
+print (test(word)) 
+
+
+#using reversed() function
+
+string = 'simplify'
+for i in reversed(string):
+    print(i , end='')
+    
+#using reversed function with join method
+string= 'simplify'
+print(''.join(reversed(string)), end='')
+
+#using slice operator
+string= 'simplify'
+reversedstr= string[::-1]
+print(reversedstr)

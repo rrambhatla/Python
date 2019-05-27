@@ -1,0 +1,23 @@
+#  WAP to check if a string is Palindrome or not
+ # using slicing
+string = input("Enter a string to check:")
+reversestr = string[::-1]
+if string.lower() == reversestr.lower():
+    print( "The string is Palindrome")
+else:
+    print("The string is not Palindrome")
+    
+ # 
+ 
+def ispalindrome(string): 
+  reverse = "" 
+  for i in string: 
+    reverse = i + reverse
+  return reverse
+  
+string = input("Enter string to check:")
+
+if string.lower() == ispalindrome(string).lower():
+    print("The string is Palindrome")
+else:
+    print("the string is not Palindrome")

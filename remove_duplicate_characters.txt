@@ -1,0 +1,19 @@
+# WAP to remove duplicate characters
+
+# When order of the characters is important
+#Using List data type
+str= "Abchdebbihdcbdhg"
+list= []
+for i in str:
+    if i not in list:
+        list.append(i)
+output=''.join(list)
+print(output)
+
+#When order of the characters is not important
+# Using Set data type
+str= "Abchdebbihdcbdhg"
+data= set()
+for i in str:
+    data.add(i)
+print(''.join(data))

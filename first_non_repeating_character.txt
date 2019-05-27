@@ -1,0 +1,16 @@
+def first_non_repeating_character(str1):
+  list = []
+  ctr = {}
+  for i in str1:
+    if i in ctr:
+      ctr[i] = ctr[i] + 1
+    else:
+      ctr[i] = 1 
+      list.append(i)
+  for i in list:
+    if ctr[i] == 1:
+      return i
+  return None
+
+print(first_non_repeating_character('aabbccdef'))    
+     
